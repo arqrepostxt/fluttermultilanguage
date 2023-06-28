@@ -1,10 +1,10 @@
-# flutter_application_2
+# flutter_multilanguage_app
 
-A new Flutter project.
+A sample Flutter App with multilanguage switch to change app language
 
 ## Getting Started
 
-This project is a starting point for a Flutter application that follows the
+This project is based on a Flutter application that follows the
 [simple app state management
 tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple).
 
@@ -14,11 +14,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Assets
 
-The `assets` directory houses images, fonts, and any other files you want to
-include with your application.
 
-The `assets/images` directory contains [resolution-aware
-images](https://flutter.dev/docs/development/ui/assets-and-images#resolution-aware).
 
 ## Localization
 
