@@ -2,12 +2,14 @@
   "appTitle": "App Aleteo",
   "helloWorld": "Mensaje de bienvenida hola mundo",
   "sampleItem": "Título de muestra",
-  "sampleItemsTitle": "SPágina de plantillas",
+  "sampleItemsTitle": "Página de plantillas",
+  "itemDetailsTitle": "Detalles del artículo",
+  "itemDetailsText": "No hay detalhes del item",
   "systemTheme": "Tema del sistema",
    "lightTheme": "El tema claro",
   "darkTheme": "El tema oscuro",
    "settingsTitle": "La Página de configuración",
-  "settingsLocaleSelect": "--Seleción de locale",
+  "settingsLocaleSelect": "Seleción de locale",
   "@appTitle": {
     "description": "Mi aplicación desarrollada con flutter"
   }

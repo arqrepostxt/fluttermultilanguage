@@ -4,10 +4,12 @@
   "sampleItem": "Item exemplo",
   "sampleItemsTitle": "Página de Modelos de Itens",
   "systemTheme": "Tema do sistema",
+  "itemDetailsTitle": "Detalhes do Item",
+  "itemDetailsText": "Não há itens aqui",
   "lightTheme": "Tema claro",
   "darkTheme": "Tema escuro",
   "settingsTitle": "Página de Configurações",
-  "settingsLocaleSelect": "--Seleção de idioma",
+  "settingsLocaleSelect": "Seleção de idioma",
   "@appTitle": {
     "description": "Meu aplicativo novo"
   }

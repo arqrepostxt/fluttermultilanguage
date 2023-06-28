@@ -42,7 +42,6 @@ class SettingsView extends StatelessWidget {
                 value: controller.locale,
                 onChanged: (Locale? newLocale) {
                   if (newLocale != null) {
-                    print('Value of new Locale \n $newLocale');
                     controller.updateLocale(newLocale);
                   }
                 },

@@ -3,6 +3,8 @@
   "helloWorld": "Welcome hello world message",
   "sampleItem": "Sample Item x",
   "sampleItemsTitle": "Sample Items Header",
+  "itemDetailsTitle": "Item Details",
+  "itemDetailsText": "Nothing to show here",
   "systemTheme": "Sys Theme",
   "lightTheme": "The light theme",
   "darkTheme": "The dark theme",
