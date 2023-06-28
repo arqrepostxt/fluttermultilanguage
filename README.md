@@ -48,55 +48,56 @@
 ## :dart: About ##
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)  ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)  ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)  ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)  ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)  ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)  ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
 
-A Flutter multi language sample with settings to change app language with l10n.
+Fluttermultilanguage is a sample project of Flutter application mobile and desktop that provides easy language change experience for users. Based on the [Simple App State Management
+tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple) and built-in localization, offers settings menu where users can easily switch between different languages to cater to their preferences.
 
 
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Change language 1;\
-:heavy_check_mark: Change Light/Dark theme 2;\
-:heavy_check_mark: Settings menu to Change Language and Theme 3;\
+:heavy_check_mark:  Change the app language 1;\
+:heavy_check_mark: Toggle between Light and Dark theme 2;\
+:heavy_check_mark: Access the Settings menu to customize language and theme preferences 3;\
 
 
 ## :rocket: Technologies ##
 
-The following tools were used in this project:
+This project utilizes the following technologies:
 
 - [Flutter](https://docs.flutter.dev/)
-- [________flutter_localizations](https://pub.dev/packages/flutter_localization)
-- [________shared_preferences 2.1.2](https://pub.dev/packages/shared_preferences)
+- [flutter_localizations](https://pub.dev/packages/flutter_localization)
+- [shared_preferences](https://pub.dev/packages/shared_preferences)
 
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and Flutter SDK installed [Flutter official documentation](https://flutter.dev/docs/get-started/install).
+Before getting started, ensure that you have the following installed:
 
-## :checkered_flag: Starting ##
+- [Git](https://git-scm.com)
+- [ Flutter](https://flutter.dev/docs/get-started/install) 
+
+## :checkered_flag: Getting Started
+
+
 
 ```bash
 # Clone this project
 $ git clone https://github.com/samuelmendespy/fluttermultilanguage
 
-# Access. Navigate to the project directory and install 
+# Navigate to the project directory
 $ cd fluttermultilanguage
 
-# Install dependencies the required dependencies by running the following command:
+# Install the required dependencies
 $ flutter pub get
 
-# Run the project.Connect a physical device or start an emulator, and run the app using the following command:
+# Run the app on a physical device or emulator
 $ flutter run
 
-# Exlore Explore and customize:** Open the project in your favorite code editor and start exploring the codebase. Customize the app according to your needs.
 
-
-# The server will initialize in the <http://localhost:3000>
 ```
 
 
 
-
-## Project info
 
 This app sample project generates localized messages based on arb files found in the `lib/src/localization` directory.
 ```
@@ -112,116 +113,16 @@ This app sample project generates localized messages based on arb files found in
    - sample_feature (sample list with 3 items)
 ```
 
+To customize the app according to your needs, open the project in your favorite code editor and start exploring the codebase.
 
->> This project is based on a Flutter application that follows the [simple app state management
-tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple) and the official guide [Internationalizing Flutter
-apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization). 
-
-[]() Get help getting started with Flutter development, view the [online documentation](https://flutter.dev/docs), which offers tutorials,samp les, guidance on mobile development, and a full API reference.
+>>
 
 
 
+## Localization Guide
 
-## Localization
-
-Bellow is a step to step guide to support additional languages, to learn about localization, currency, timezones and more please check the tutorial on [Internationalizing Flutter
+For a more detailed guide on localization, currency, time zones, and more, refer to the tutorial on [Internationalizing Flutter
 apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
-
-
-
-1 - Before translate finish your app or MVP.
-
-2 - Go to the code to be translated
-```
-return Column(
-  children: <Widget>['Hello, World!!!',],
-  );
-
-```
-3 - Locate the ln10n folder and open the app_en.arb to edit
->Note: In this project the ln10n folder is localization. *It is defined on l10n.yaml. ** The path is /lib/src/localization/app_en.arb 
-
-```
-{
-  "appTitle": "My flutter_application_2",
-  "@appTitle": {
-    "description": "The title of the application"
-  }
-}
-```
-> Note : Strings have a format **"nickname":"Default text"**. The nickname should be a reference easy to localize. You can also use @nickname annotations to provide more info.
-
-4 - Insert a new line insert. 
-
-> Note: At this time the line will be "helloWorld":"Hello, World!!!",  
-
-```
-{ 
-  "appTitle": "My flutter_application_2",
-  "helloWorld":"Hello, World!!!", 
-  "@appTitle": {
-    "description": "The title of the application"
-  }
-   
-}
-
-```
-
-5 - Repeat 2,3 and 4 to insert all the text on your app that should be translated to other languages.
-
-```
-{
-  "helloWorld": "Hello, World!!!",
-  "sampleItem": "Sample Item",
-  "sampleItemsTitle": "Sample Items Header",
-  "itemDetailsTitle": "Item Details",
-  "itemDetailsText": "Nothing to show here",
-  "systemTheme": "Default System Theme",
-  "lightTheme": "Light Theme",
-  "darkTheme": "Dark Theme",
-  "settingsTitle": "Settings Page",
-  "settingsLocaleSelect": "Select locale",
-  "appTitle": "My flutter_application_2",
-  "@appTitle": {
-    "description": "The title of the application"
-  }  
-}
-
-```
-
-6 - Now make copies of your English arb file and rename the copies based on the laguage code with the format is app_languageCode_countryCode.arb.
-
-
-Examples:
-```
-app_en_US.arb //	English (United States)
-app_en_GB.arb //	English (United Kingdom)
-app_fr.arb // French
-app_it_CH.arb // Italian (Switzerland)
-app_ja_JP.arb // Japanese
-app_jp.arb // Japanese
-app_hi.arb // Hindi (India)
-app_zh.arb    // Chinese
-app_zh_XX.arb //Chinese
-app_zh_CN.arb	//Chinese
-app_zh_HK.arb	//Chinese (Hong Kong)
-app_zh_MO.arb	//Chinese (Macau)
-app_zh_SG.arb	//Chinese (Singapore)
-app_zh_TW.arb	//Chinese
-en-ZA	English // (South Africa)
-zu-ZA	Zulu // (South Africa)
-xh-ZA	Xhosa // (South Africa)
-app_sv_FI.arb // Swedish (Finland)
-app_sv_SE.arb // Swedish (Sweeden)
-```
-
->> You can see more language codes following the link 
-[http://www.lingoes.net/en/translator/langcode.htm](http://www.lingoes.net/en/translator/langcode.htm)
- 
-
-
-7 - Translate and localize your strings on each language file.
-
 
 
 ## :memo: License ##
@@ -232,12 +133,44 @@ This project is under license from MIT. For more details, see the [LICENSE](LICE
 
 
 ## Versioning
+Fluttermultilanguage follows the principles of Semantic Versioning. The current version of the app is 1.0.1+1.
 
-Light Sam Keys follows the [Semantic Versioning](https://semver.org/) guidelines. The current version of the app is 1.0.1+1.
+For more information about Flutter development, check out the comprehensive online documentation, which offers tutorials, samples, guidance on mobile development, and a full API reference.
+
+## Localization
+Fluttermultilanguage supports localization to cater to users in different regions. To add support for additional languages, follow these steps:
+
+1. Ensure your app is ready for translation or MVP (Minimum Viable Product) stage.
+2. Locate the code that needs translation.
+3. Open the corresponding app_en.arb file in the lib/src/localization directory. This file contains the default English translations.
+4. Insert a new line to add the translation key and your text. Format : 
+```
+{
+  "key": "Your text",
+  "loginMessage": "Welcome!",
+  "logoutMessage": "Come back soon!"",
+  "appTitle": "My flutter_application_2",
+  "@appTitle": {
+    "description": "The title of the application"
+  }  
+}
+
+```
+5. Repeat steps 2-4 to add all the text that requires translation.
+Make copies of the English arb file and rename them based on the language and country code (e.g., app_fr.arb for French, app_ja_JP.arb for Japanese, etc.). 
+
+>You can see more language codes following the link [http://www.lingoes.net/en/translator/langcode.htm](http://www.lingoes.net/en/translator/langcode.htm)
 
 
-BACK TOP TOP ↑
+Translate and localize the strings in each language file.
+For a more detailed guide on localization, currency, time zones, and more, refer to the tutorial on Internationalizing Flutter apps.
+
+>LEARN MORE :  The official guide [Internationalizing Flutter
+apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) and read about Flutter development on the [online documentation](https://flutter.dev/docs), which offers tutorials,samples, guidance on mobile development, and a full API reference.
+
+
+🔝<a href="#top">Back to top</a>
+
 
 &#xa0;
 
-<a href="#top">Back to top</a>
