@@ -1,0 +1,14 @@
+{
+  "appTitle": "App flutter_2",
+  "helloWorld": "Welcome hello world message",
+  "sampleItem": "Item exemplo x",
+  "sampleItemsTitle": "Página de Modelos de Itens",
+  "systemTheme": "Tema do sistema2",
+  "lightTheme": "Tema claro",
+  "darkTheme": "Tema escuro",
+  "settingsTitle": "Página de Configurações",
+  "settingsLocaleSelect": "--Seleção de idioma",
+  "@appTitle": {
+    "description": "Meu aplicativo novo"
+  }
+}
