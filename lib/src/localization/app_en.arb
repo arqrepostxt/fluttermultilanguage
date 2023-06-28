@@ -7,7 +7,7 @@
   "lightTheme": "The light theme",
   "darkTheme": "The dark theme",
   "settingsTitle": "Settings Page",
-  "settingsLocaleSelect": "--Locale Selection",
+  "settingsLocaleSelect": "Select locale",
   "@appTitle": {
     "description": "The title of the application"
   }  

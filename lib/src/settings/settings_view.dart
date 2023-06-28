@@ -9,7 +9,10 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart'; // Import this pac
 /// When a user changes a setting, the SettingsController is updated and
 /// Widgets that listen to the SettingsController are rebuilt.
 class SettingsView extends StatelessWidget {
-  const SettingsView({super.key, required this.controller});
+  const SettingsView(
+      {super.key,
+      required this.controller,
+      required void Function(Locale newLocale) setLocale});
 
   static const routeName = '/settings';
 
@@ -29,6 +32,11 @@ class SettingsView extends StatelessWidget {
           // SettingsController is updated, which rebuilds the MaterialApp.
           child: Column(
             children: [
+              Text(
+                AppLocalizations.of(context)!.settingsLocaleSelect,
+                style:
+                    const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
               const SizedBox(height: 16),
               DropdownButton<Locale>(
                 value: controller.locale,

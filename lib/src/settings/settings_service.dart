@@ -46,8 +46,8 @@ class SettingsService {
     // }
 
     // Locale only with language code : 2 characters
-    final localeString = '${locale.languageCode}';
-    print('Locale selected is ${localeString}');
+    final localeString = locale.languageCode;
+    print('Locale selected is $localeString');
 
     // Locale with language and country codes : 5 chracters
     // final localeString = '${locale.languageCode}_${locale.countryCode}';
