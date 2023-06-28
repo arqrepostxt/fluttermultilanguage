@@ -1,5 +1,7 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="fluttermultilanguage" />
+  <img src ="https://github.com/samuelmendespy/fluttermultilanguage/assets/75790706/e430987a-3424-4072-82a6-547cb1c5e051" alt="Banner of the project fluttermultilanguage"/>
+
+
 
   &#xa0;
 
