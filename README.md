@@ -1,14 +1,105 @@
-# flutter_multilanguage_app
+<div align="center" id="top"> 
+  <img src="./.github/app.gif" alt="fluttermultilanguage" />
+
+  &#xa0;
+
+  <!-- <a href="https://fluttermultilanguage.netlify.app">Demo</a> -->
+</div>
+
+<h1 align="center">fluttermultilanguage</h1>
+
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/samuelmendespy/fluttermultilanguage?color=56BEB8">
+
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/samuelmendespy/fluttermultilanguage?color=56BEB8">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/samuelmendespy/fluttermultilanguage?color=56BEB8">
+
+  <img alt="License" src="https://img.shields.io/github/license/samuelmendespy/fluttermultilanguage?color=56BEB8">
+
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/samuelmendespy/fluttermultilanguage?color=56BEB8" /> -->
+
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/samuelmendespy/fluttermultilanguage?color=56BEB8" /> -->
+
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/samuelmendespy/fluttermultilanguage?color=56BEB8" /> -->
+</p>
+
+<!-- Status -->
+
+<!-- <h4 align="center"> 
+	🚧  fluttermultilanguage 🚀 Under construction...  🚧
+</h4> 
+
+<hr> -->
+
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/samuelmendespy" target="_blank">Author</a>
+</p>
+
+<br>
+
+
+## :dart: About ##
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)  ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)  ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)  ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)  ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)  ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)  ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
 
 A Flutter multi language sample with settings to change app language with l10n.
 
->Uma amostra de aplicativo multilíngue do Flutter com configurações para alterar o idioma do aplicativo.
+
+
+## :sparkles: Features ##
+
+:heavy_check_mark: Change language 1;\
+:heavy_check_mark: Change Light/Dark theme 2;\
+:heavy_check_mark: Settings menu to Change Language and Theme 3;\
+
+
+## :rocket: Technologies ##
+
+The following tools were used in this project:
+
+- [Flutter](https://docs.flutter.dev/)
+- [________flutter_localizations](https://pub.dev/packages/flutter_localization)
+- [________shared_preferences 2.1.2](https://pub.dev/packages/shared_preferences)
+
+
+## :white_check_mark: Requirements ##
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and Flutter SDK installed [Flutter official documentation](https://flutter.dev/docs/get-started/install).
+
+## :checkered_flag: Starting ##
+
+```bash
+# Clone this project
+$ git clone https://github.com/samuelmendespy/fluttermultilanguage
+
+# Access. Navigate to the project directory and install 
+$ cd fluttermultilanguage
+
+# Install dependencies the required dependencies by running the following command:
+$ flutter pub get
+
+# Run the project.Connect a physical device or start an emulator, and run the app using the following command:
+$ flutter run
+
+# Exlore Explore and customize:** Open the project in your favorite code editor and start exploring the codebase. Customize the app according to your needs.
+
+
+# The server will initialize in the <http://localhost:3000>
+```
 
 
 
-## Guide to translate the app
 
-Main strucuture
+## Project info
+
+This app sample project generates localized messages based on arb files found in the `lib/src/localization` directory.
+```
 -lib
  - main.dart (Loads settings and start the app.dart - MyApp widget )
   - src
@@ -19,10 +110,27 @@ Main strucuture
     - settings_view.dart (Two dropdowmenus. Change language and theme mode)
    - localization (l10n folder. Translations forsupported languages)
    - sample_feature (sample list with 3 items)
+```
 
-Steps to Translate your app
+
+>> This project is based on a Flutter application that follows the [simple app state management
+tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple) and the official guide [Internationalizing Flutter
+apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization). 
+
+[]() Get help getting started with Flutter development, view the [online documentation](https://flutter.dev/docs), which offers tutorials,samp les, guidance on mobile development, and a full API reference.
+
+
+
+
+## Localization
+
+Bellow is a step to step guide to support additional languages, to learn about localization, currency, timezones and more please check the tutorial on [Internationalizing Flutter
+apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+
+
 
 1 - Before translate finish your app or MVP.
+
 2 - Go to the code to be translated
 ```
 return Column(
@@ -30,7 +138,7 @@ return Column(
   );
 
 ```
-3 - Locate the the ln10n folder and open the app_en.arb to edit
+3 - Locate the ln10n folder and open the app_en.arb to edit
 >Note: In this project the ln10n folder is localization. *It is defined on l10n.yaml. ** The path is /lib/src/localization/app_en.arb 
 
 ```
@@ -115,26 +223,21 @@ app_sv_SE.arb // Swedish (Sweeden)
 7 - Translate and localize your strings on each language file.
 
 
-## Project info
-This project is based on a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple). https://docs.flutter.dev/accessibility-and-localization/internationalization
+
+## :memo: License ##
+
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
 
-// help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
-## Assets
+## Versioning
 
+Light Sam Keys follows the [Semantic Versioning](https://semver.org/) guidelines. The current version of the app is 1.0.1+1.
 
 
-## Localization
+BACK TOP TOP ↑
 
-This project generates localized messages based on arb files found in
-the `lib/src/localization` directory.
+&#xa0;
 
-To support additional languages, please visit the tutorial on
-[Internationalizing Flutter
-apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+<a href="#top">Back to top</a>
