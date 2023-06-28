@@ -1,13 +1,13 @@
 {
   "appTitle": "My flutter_application_2",
-  "helloWorld": "Welcome hello world message",
-  "sampleItem": "Sample Item x",
+  "helloWorld": "Hello, World!!!",
+  "sampleItem": "Sample Item",
   "sampleItemsTitle": "Sample Items Header",
   "itemDetailsTitle": "Item Details",
   "itemDetailsText": "Nothing to show here",
-  "systemTheme": "Sys Theme",
-  "lightTheme": "The light theme",
-  "darkTheme": "The dark theme",
+  "systemTheme": "Default System Theme",
+  "lightTheme": "Light Theme",
+  "darkTheme": "Dark Theme",
   "settingsTitle": "Settings Page",
   "settingsLocaleSelect": "Select locale",
   "@appTitle": {

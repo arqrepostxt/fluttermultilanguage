@@ -1,6 +1,6 @@
 {
   "appTitle": "App flutter_2",
-  "helloWorld": "Welcome hello world message",
+  "helloWorld": "Hello, World!",
   "sampleItem": "Item exemplo",
   "sampleItemsTitle": "Página de Modelos de Itens",
   "systemTheme": "Tema do sistema",
